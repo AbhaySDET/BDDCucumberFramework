@@ -8,7 +8,6 @@ public class Hooks {
 	BaseTest bt= new BaseTest();
 	@Before
 	public void setup(){
-		System.out.println("before");
 		bt.setup();
 		
 	}

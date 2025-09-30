@@ -21,19 +21,19 @@ public class LoginPage extends BaseTest {
 	public WebElement btnLogin;
 	
 	public LoginPage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driverSet.get(), this);
 	}
 	
 	
 	public void verifyUserIsONCRMLogINPage(){
-	String title=	driver.getTitle();
+	String title=	driverSet.get().getTitle();
 		System.out.println(title);
 	}
 	
-	public void userEnterCredential() {
-		txtEmail.sendKeys(Utility.readConfig("USEREMAIL"));
+	public void userEnterCredential(String userEmail, String pwd) {
+		txtEmail.sendKeys(Utility.readConfig(userEmail));
 		
-		txtPwd.sendKeys(Utility.readConfig("USERPWD"));
+		txtPwd.sendKeys(Utility.readConfig(pwd));
 	}
 	
 	public void clickLoginBtn() {
@@ -41,11 +41,11 @@ public class LoginPage extends BaseTest {
 	}
 	
 	public void verifyUserOnHomePage() {
-		System.out.println(driver.getCurrentUrl());
+		System.out.println(driverSet.get().getCurrentUrl());
 	}
 	
 	public void verifyHomePageTitle() {
-		System.out.println(driver.getTitle());
+		System.out.println(driverSet.get().getTitle());
 	}
 
 }

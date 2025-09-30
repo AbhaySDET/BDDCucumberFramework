@@ -14,8 +14,8 @@ public class LoginStep   {
 	}
 
 	@When("the user enters valid username {string} and password {string}")
-	public void the_user_enters_valid_username_and_password(String string, String string2) {
-   lp.userEnterCredential();
+	public void the_user_enters_valid_username_and_password(String userEmail, String pwd) {
+   lp.userEnterCredential(userEmail,pwd);
 	}
 
 	@When("clicks on the login button")

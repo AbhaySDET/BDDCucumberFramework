@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-21T17:54:58 IST" name="Default suite" finished-at="2025-09-21T17:55:07 IST" duration-ms="8887">
+  <suite started-at="2025-09-29T19:04:06 IST" name="Cucumber Suite" finished-at="2025-09-29T19:04:21 IST" duration-ms="14430">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bdd.runner.Runner@70325e14]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bdd.runner.Runner@ae13544]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-09-21T17:54:58 IST" name="Default test" finished-at="2025-09-21T17:55:07 IST" duration-ms="8887">
+    <test started-at="2025-09-29T19:04:06 IST" name="Cucumber Tests" finished-at="2025-09-29T19:04:21 IST" duration-ms="14430">
       <class name="com.bdd.runner.Runner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.bdd.runner.Runner@70325e14]" started-at="2025-09-21T17:54:58 IST" name="setUpClass" finished-at="2025-09-21T17:54:59 IST" duration-ms="529" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.bdd.runner.Runner@ae13544]" started-at="2025-09-29T19:04:06 IST" name="setUpClass" finished-at="2025-09-29T19:04:07 IST" duration-ms="584" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@56681eaf]]>
+                <![CDATA[org.testng.TestRunner@693fe6c9]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bdd.runner.Runner@70325e14]" started-at="2025-09-21T17:54:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-21T17:55:07 IST" duration-ms="8286" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bdd.runner.Runner@ae13544]" started-at="2025-09-29T19:04:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-29T19:04:16 IST" duration-ms="9114" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,27 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.bdd.runner.Runner@70325e14]" started-at="2025-09-21T17:55:07 IST" name="tearDownClass" finished-at="2025-09-21T17:55:07 IST" duration-ms="24" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bdd.runner.Runner@ae13544]" started-at="2025-09-29T19:04:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-09-29T19:04:21 IST" duration-ms="13760" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["verify event creation feature on FreeCrm HomePage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to CRM Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.bdd.runner.Runner@ae13544]" started-at="2025-09-29T19:04:21 IST" name="tearDownClass" finished-at="2025-09-29T19:04:21 IST" duration-ms="37" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.bdd.runner.Runner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Cucumber Tests -->
+  </suite> <!-- Cucumber Suite -->
 </testng-results>
